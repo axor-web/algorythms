@@ -1,10 +1,9 @@
 function reverseList(list) {
   let currentNodes = [list, list.next];
-  let nextNode = currentNodes[0].next;
   list.next = null;
 
   while (currentNodes[1]) {
-    nextNode = currentNodes[1].next;
+    const nextNode = currentNodes[1].next;
 
     currentNodes[1].next = currentNodes[0];
 
