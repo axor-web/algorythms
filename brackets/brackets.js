@@ -16,7 +16,7 @@ function isBracketsValid(bracketsString) {
   return !stack.length;
 }
 
-const mockBrackets = ['((((]]]]', '[({})]()', '[((]))'];
+const mockBrackets = ['((((]]]]', '[({})]()', '[((]))', '(((((()'];
 
 for (let brackets of mockBrackets) {
   console.log(brackets, isBracketsValid(brackets));
