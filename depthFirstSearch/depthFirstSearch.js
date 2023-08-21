@@ -1,15 +1,16 @@
 function depthFirstSearch(tree) {
   const answerArray = [];
 
-  function depthFirstSearchInner(tree) {
-    answerArray.push(tree.value);
-    if ('left' in tree) {
-      depthFirstSearchInner(tree.left);
-      depthFirstSearchInner(tree.right);
+  const stack = [tree];
+
+  while (stack.length) {
+    const currentTree = stack.pop();
+    if ('children' in currentTree) {
+      for (let index = currentTree.children.length - 1; index >= 0; index--) {
+        answerArray
+      }
     }
   }
-
-  depthFirstSearchInner(tree);
 
   return answerArray;
 }
