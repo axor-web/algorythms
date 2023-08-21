@@ -3,7 +3,7 @@ function primeNumber(limit) {
     if (number === false) { return false; }
 
     for (let del = 2; del <= Math.sqrt(number); del++) {
-      if (number % del !== 0) return false;
+      if (number % del === 0) return false;
     }
     return true;
   }
@@ -27,4 +27,4 @@ function primeNumber(limit) {
   return array.filter((item) => item);
 }
 
-console.log(primeNumber(11));
+console.log(primeNumber(30));
