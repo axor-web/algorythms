@@ -13,7 +13,7 @@ function isBracketsValid(bracketsString) {
     }
   }
 
-  return true;
+  return !stack.length;
 }
 
 const mockBrackets = ['((((]]]]', '[({})]()', '[((]))'];
